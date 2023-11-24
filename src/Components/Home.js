@@ -1,7 +1,7 @@
 import React from 'react';
 import NavBar from './NavBar';
 import {FiArrowRight} from "react-icons/fi"
-import BannerImage from "../Assets/enem-2018-logo1-removebg-preview-_3_.svg"
+import BannerImage from "../Assets/cerebro500px.png"
 
 const Home = () => {
     return (
@@ -10,7 +10,7 @@ const Home = () => {
         <div className='home-banner-container'>
 
         <div className='home-text-section'>
-            <h1 className='primary-heading'>
+            <h1 className='primary'>
             O ENEM simplificado
             </h1>
             <p className='primary-text'>
