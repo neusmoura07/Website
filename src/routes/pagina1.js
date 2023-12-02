@@ -2,7 +2,6 @@ import React from "react";
 import Home from "../Components/Home";
 import Curiosidades from "../Components/Curiosidades";
 import Work from "../Components/Work";
-import Contact from "../Components/Contact"
 import Vantagens from "../Components/Vantagens"
 
 const Pagina01 = () => {

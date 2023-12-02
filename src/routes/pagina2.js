@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import React from "react"
+import './pagina2.css'
 
 
 const FormLogin = () => {
@@ -28,8 +29,9 @@ const FormLogin = () => {
       });
     };
   }, []); // O segundo parâmetro [] garante que o efeito só seja executado uma vez, semelhante ao componentDidMount
-
-    return <div className="container" id="container">
+  
+    return <div className="back">
+    <div className="container" id="container">
         <div className="form-container sign-up">
             <form>
                 <h1>Cadastre-se Agora</h1>
@@ -41,7 +43,7 @@ const FormLogin = () => {
             </form>
         </div>
         <div className="form-container sign-in">
-            <form>
+            <form className="center-box-container">
                 <h1>Entre Agora</h1>
                 <span> Ou crie sua conta</span>
                 <input type="email" placeholder="Email"/>
@@ -63,6 +65,7 @@ const FormLogin = () => {
               <button className="hidden" id="register">Cadastrar</button>
             </div>
           </div>
+        </div>
         </div>
     </div>
     
