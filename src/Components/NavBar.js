@@ -7,9 +7,11 @@ import HomeIcon from "@mui/icons-material/Home"
 import InfoIcon from "@mui/icons-material/Info"
 import CommentRoudedIcon from "@mui/icons-material/CommentRounded"
 import PhoneRoundedIcon from "@mui/icons-material/PhoneRounded"
+import {link, useNavigate } from 'react-router-dom'
 import ShoppingCartRoundedIcon from "@mui/icons-material/ShoppingCartRounded"
 
 const NavBar = () => {
+
 
     const [openMenu,setOpenMenu] = useState(false)
     const menuOptions = [
@@ -27,6 +29,13 @@ const NavBar = () => {
         }
     ]
 
+    const navigate = useNavigate();
+
+    const handlelogin = () => {
+        return navigate("/login");
+
+    };
+
   return (
     <nav>
         <div className='nav-logo-container'>
@@ -36,7 +45,7 @@ const NavBar = () => {
             <a href=''>Home</a>
             <a href=''>Curiosidades</a>
             <a href=''>Sobre Nós</a>
-            <button className='primary-button'>
+            <button onClick={handlelogin} className='primary-button'>
                 Área do aluno
             </button>
         </div>
